@@ -36,27 +36,18 @@ public class Caja extends javax.swing.JFrame {
         header = new javax.swing.JPanel();
         headericono = new javax.swing.JLabel();
         headerlabel = new javax.swing.JLabel();
-        ingresolabel = new javax.swing.JLabel();
-        arslabel = new javax.swing.JLabel();
-        numingresolabel = new javax.swing.JLabel();
-        flechaizqicono = new javax.swing.JLabel();
-        calendaricono = new javax.swing.JLabel();
-        flechadericono = new javax.swing.JLabel();
-        hoypanel = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
-        fechalabel = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         conceptostabla = new javax.swing.JTable();
         añadirbtn = new javax.swing.JPanel();
         añadirlabel = new javax.swing.JLabel();
         eliminarbtn = new javax.swing.JPanel();
         eliminarlabel = new javax.swing.JLabel();
-        imprimirbtn = new javax.swing.JPanel();
-        imprimirlabel = new javax.swing.JLabel();
         modificarbtn = new javax.swing.JPanel();
         modificarlabel = new javax.swing.JLabel();
         volverbtn = new javax.swing.JPanel();
         volverlabel = new javax.swing.JLabel();
+        seleccionelabel = new javax.swing.JLabel();
+        fechachooser = new com.toedter.calendar.JDateChooser();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocationByPlatform(true);
@@ -79,61 +70,6 @@ public class Caja extends javax.swing.JFrame {
         header.add(headerlabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 12, 50, 30));
 
         bg.add(header, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 913, -1));
-
-        ingresolabel.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
-        ingresolabel.setText("Ingreso");
-        bg.add(ingresolabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 70, -1, -1));
-
-        arslabel.setBackground(new java.awt.Color(0, 242, 0));
-        arslabel.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
-        arslabel.setForeground(new java.awt.Color(0, 153, 0));
-        arslabel.setText("ARS$");
-        bg.add(arslabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(97, 70, -1, -1));
-
-        numingresolabel.setBackground(new java.awt.Color(0, 242, 0));
-        numingresolabel.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
-        numingresolabel.setForeground(new java.awt.Color(0, 153, 0));
-        numingresolabel.setText("0.00");
-        bg.add(numingresolabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(133, 70, -1, -1));
-
-        flechaizqicono.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/images/angle-left.png"))); // NOI18N
-        bg.add(flechaizqicono, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 112, 26, 27));
-
-        calendaricono.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        calendaricono.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/images/calendar3.png"))); // NOI18N
-        bg.add(calendaricono, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 110, 40, 30));
-
-        flechadericono.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/images/angle-right.png"))); // NOI18N
-        flechadericono.setText("[Ícono]");
-        bg.add(flechadericono, new org.netbeans.lib.awtextra.AbsoluteConstraints(124, 117, 21, -1));
-
-        hoypanel.setBackground(new java.awt.Color(229, 221, 230));
-        hoypanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(167, 136, 171)));
-
-        jLabel4.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(167, 136, 171));
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("Hoy");
-
-        javax.swing.GroupLayout hoypanelLayout = new javax.swing.GroupLayout(hoypanel);
-        hoypanel.setLayout(hoypanelLayout);
-        hoypanelLayout.setHorizontalGroup(
-            hoypanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, hoypanelLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        hoypanelLayout.setVerticalGroup(
-            hoypanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, hoypanelLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        bg.add(hoypanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(174, 112, -1, -1));
-
-        fechalabel.setText("[fecha]");
-        bg.add(fechalabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(236, 120, -1, -1));
 
         jScrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 
@@ -200,26 +136,6 @@ public class Caja extends javax.swing.JFrame {
 
         bg.add(eliminarbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(444, 70, -1, -1));
 
-        imprimirbtn.setBackground(new java.awt.Color(167, 136, 171));
-
-        imprimirlabel.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        imprimirlabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/images/impresora.png"))); // NOI18N
-        imprimirlabel.setText("IMPRIMIR CONCEPTO");
-        imprimirlabel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        javax.swing.GroupLayout imprimirbtnLayout = new javax.swing.GroupLayout(imprimirbtn);
-        imprimirbtn.setLayout(imprimirbtnLayout);
-        imprimirbtnLayout.setHorizontalGroup(
-            imprimirbtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(imprimirlabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        imprimirbtnLayout.setVerticalGroup(
-            imprimirbtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(imprimirlabel, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE)
-        );
-
-        bg.add(imprimirbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 70, -1, 31));
-
         modificarbtn.setBackground(new java.awt.Color(167, 136, 171));
 
         modificarlabel.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
@@ -265,19 +181,24 @@ public class Caja extends javax.swing.JFrame {
 
         bg.add(volverbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 540, -1, -1));
 
+        seleccionelabel.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        seleccionelabel.setText("Seleccione la fecha");
+        bg.add(seleccionelabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, -1, -1));
+        bg.add(fechachooser, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 190, -1));
+
         getContentPane().add(bg, java.awt.BorderLayout.CENTER);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void volverlabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverlabelMouseClicked
-        
+
         MenuPrincipal menu = new MenuPrincipal();
-            
-            menu.setVisible(true);
-            menu.setLocationRelativeTo(null);
-            this.setVisible(false);
-            
+
+        menu.setVisible(true);
+        menu.setLocationRelativeTo(null);
+        this.setVisible(false);
+
     }//GEN-LAST:event_volverlabelMouseClicked
 
     /**
@@ -319,29 +240,20 @@ public class Caja extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel arslabel;
     private javax.swing.JPanel añadirbtn;
     private javax.swing.JLabel añadirlabel;
     private javax.swing.JPanel bg;
-    private javax.swing.JLabel calendaricono;
     private javax.swing.JTable conceptostabla;
     private javax.swing.JPanel eliminarbtn;
     private javax.swing.JLabel eliminarlabel;
-    private javax.swing.JLabel fechalabel;
-    private javax.swing.JLabel flechadericono;
-    private javax.swing.JLabel flechaizqicono;
+    private com.toedter.calendar.JDateChooser fechachooser;
     private javax.swing.JPanel header;
     private javax.swing.JLabel headericono;
     private javax.swing.JLabel headerlabel;
-    private javax.swing.JPanel hoypanel;
-    private javax.swing.JPanel imprimirbtn;
-    private javax.swing.JLabel imprimirlabel;
-    private javax.swing.JLabel ingresolabel;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JPanel modificarbtn;
     private javax.swing.JLabel modificarlabel;
-    private javax.swing.JLabel numingresolabel;
+    private javax.swing.JLabel seleccionelabel;
     private javax.swing.JPanel volverbtn;
     private javax.swing.JLabel volverlabel;
     // End of variables declaration//GEN-END:variables

@@ -37,12 +37,10 @@ public class Pacientes extends javax.swing.JFrame {
         bajalabel = new javax.swing.JLabel();
         nuevobtn = new javax.swing.JPanel();
         nuevolabel = new javax.swing.JLabel();
-        imprimirbtn = new javax.swing.JPanel();
-        imprimirlabel = new javax.swing.JLabel();
         volverbtn = new javax.swing.JPanel();
         volverlabel = new javax.swing.JLabel();
-        infolabel = new javax.swing.JLabel();
         infobtn = new javax.swing.JPanel();
+        infolabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocationByPlatform(true);
@@ -155,31 +153,6 @@ public class Pacientes extends javax.swing.JFrame {
 
         bg.add(nuevobtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 100, 220, 30));
 
-        imprimirbtn.setBackground(new java.awt.Color(167, 136, 171));
-
-        imprimirlabel.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        imprimirlabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        imprimirlabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/images/impresora.png"))); // NOI18N
-        imprimirlabel.setText("IMPRIMIR DATOS DE PACIENTE");
-        imprimirlabel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        javax.swing.GroupLayout imprimirbtnLayout = new javax.swing.GroupLayout(imprimirbtn);
-        imprimirbtn.setLayout(imprimirbtnLayout);
-        imprimirbtnLayout.setHorizontalGroup(
-            imprimirbtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, imprimirbtnLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(imprimirlabel, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        imprimirbtnLayout.setVerticalGroup(
-            imprimirbtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, imprimirbtnLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(imprimirlabel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        bg.add(imprimirbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 250, -1, -1));
-
         volverbtn.setBackground(new java.awt.Color(229, 221, 230));
 
         volverlabel.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
@@ -206,7 +179,9 @@ public class Pacientes extends javax.swing.JFrame {
             .addComponent(volverlabel, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
         );
 
-        bg.add(volverbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 440, 110, 30));
+        bg.add(volverbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, 110, 30));
+
+        infobtn.setBackground(new java.awt.Color(167, 136, 171));
 
         infolabel.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         infolabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -218,24 +193,31 @@ public class Pacientes extends javax.swing.JFrame {
                 infolabelMouseClicked(evt);
             }
         });
-        bg.add(infolabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 300, 220, 30));
-
-        infobtn.setBackground(new java.awt.Color(167, 136, 171));
 
         javax.swing.GroupLayout infobtnLayout = new javax.swing.GroupLayout(infobtn);
         infobtn.setLayout(infobtnLayout);
         infobtnLayout.setHorizontalGroup(
             infobtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 220, Short.MAX_VALUE)
+            .addGroup(infobtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(infobtnLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(infolabel, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
         infobtnLayout.setVerticalGroup(
             infobtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 30, Short.MAX_VALUE)
+            .addGroup(infobtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(infobtnLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(infolabel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
 
-        bg.add(infobtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 300, -1, -1));
+        bg.add(infobtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 250, -1, -1));
 
-        getContentPane().add(bg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 934, 510));
+        getContentPane().add(bg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 934, 420));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -344,8 +326,6 @@ public class Pacientes extends javax.swing.JFrame {
     private javax.swing.JPanel bg;
     private javax.swing.JLabel buscaricono;
     private javax.swing.JTextField buscartxt;
-    private javax.swing.JPanel imprimirbtn;
-    private javax.swing.JLabel imprimirlabel;
     private javax.swing.JPanel infobtn;
     private javax.swing.JLabel infolabel;
     private javax.swing.JPanel modificarbtn;

@@ -67,8 +67,6 @@ public class InfoPaciente extends javax.swing.JFrame {
         verlabel = new javax.swing.JLabel();
         bajabtn = new javax.swing.JPanel();
         bajalabel = new javax.swing.JLabel();
-        imprimirbtn = new javax.swing.JPanel();
-        imprimirlabel = new javax.swing.JLabel();
         examenesbtn = new javax.swing.JPanel();
         exameneslabel = new javax.swing.JLabel();
         odontogramalabel = new javax.swing.JLabel();
@@ -323,30 +321,6 @@ public class InfoPaciente extends javax.swing.JFrame {
 
         bg.add(bajabtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 430, 220, -1));
 
-        imprimirbtn.setBackground(new java.awt.Color(167, 136, 171));
-
-        imprimirlabel.setFont(new java.awt.Font("Roboto Thin", 0, 12)); // NOI18N
-        imprimirlabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        imprimirlabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/images/impresora.png"))); // NOI18N
-        imprimirlabel.setText("IMPRIMIR HISTORIAL CLÍNICO");
-        imprimirlabel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        javax.swing.GroupLayout imprimirbtnLayout = new javax.swing.GroupLayout(imprimirbtn);
-        imprimirbtn.setLayout(imprimirbtnLayout);
-        imprimirbtnLayout.setHorizontalGroup(
-            imprimirbtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(imprimirbtnLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(imprimirlabel)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        imprimirbtnLayout.setVerticalGroup(
-            imprimirbtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(imprimirlabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-        );
-
-        bg.add(imprimirbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 490, -1, 30));
-
         examenesbtn.setBackground(new java.awt.Color(167, 136, 171));
 
         exameneslabel.setFont(new java.awt.Font("Roboto Thin", 0, 12)); // NOI18N
@@ -555,8 +529,6 @@ public class InfoPaciente extends javax.swing.JFrame {
     private javax.swing.JLabel fijolabel;
     private javax.swing.JTextField fijotxt;
     private javax.swing.JLabel icono;
-    private javax.swing.JPanel imprimirbtn;
-    private javax.swing.JLabel imprimirlabel;
     private javax.swing.JPanel modificarbtn;
     private javax.swing.JLabel modificarlabel;
     private javax.swing.JLabel nombrelabel;

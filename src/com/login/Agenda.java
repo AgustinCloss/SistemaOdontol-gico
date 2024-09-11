@@ -25,7 +25,7 @@ public class Agenda extends javax.swing.JFrame {
     public Agenda() {
         initComponents();
         
-        updateDateLabel();
+        
         
         
     }
@@ -57,9 +57,6 @@ public class Agenda extends javax.swing.JFrame {
         headerlabel = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         agendatabla = new javax.swing.JTable();
-        fechalabel = new javax.swing.JLabel();
-        flechader = new javax.swing.JLabel();
-        flechaizq = new javax.swing.JLabel();
         volverbtn = new javax.swing.JPanel();
         volverlabel = new javax.swing.JLabel();
         fechachooser = new com.toedter.calendar.JDateChooser();
@@ -262,6 +259,30 @@ public class Agenda extends javax.swing.JFrame {
                 {null, null, null},
                 {null, null, null},
                 {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
                 {null, null, null}
             },
             new String [] {
@@ -270,22 +291,7 @@ public class Agenda extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(agendatabla);
 
-        bg.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 550, 370));
-
-        fechalabel.setFont(new java.awt.Font("Roboto Thin", 0, 18)); // NOI18N
-        fechalabel.setText("** de ** de ****");
-        bg.add(fechalabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 60, -1, -1));
-
-        flechader.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/images/angle-right.png"))); // NOI18N
-        bg.add(flechader, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 70, 20, -1));
-
-        flechaizq.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/images/angle-left.png"))); // NOI18N
-        flechaizq.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                flechaizqMouseClicked(evt);
-            }
-        });
-        bg.add(flechaizq, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 70, 20, -1));
+        bg.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 60, 550, 410));
 
         volverbtn.setBackground(new java.awt.Color(229, 221, 230));
 
@@ -417,16 +423,7 @@ public class Agenda extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void updateDateLabel() {
-        // Obtén la fecha actual
-        Date now = new Date();
-        // Define el formato de la fecha
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-        // Convierte la fecha a una cadena
-        String formattedDate = sdf.format(now);
-        // Establece el texto del JLabel con la fecha formateada
-        fechalabel.setText(formattedDate);
-    }
+    
     private void volverlabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverlabelMouseClicked
         
         MenuPrincipal menu = new MenuPrincipal();
@@ -436,10 +433,6 @@ public class Agenda extends javax.swing.JFrame {
             this.setVisible(false);
             
     }//GEN-LAST:event_volverlabelMouseClicked
-
-    private void flechaizqMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_flechaizqMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_flechaizqMouseClicked
 
     private void agendarlabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agendarlabelMouseClicked
 
@@ -526,9 +519,6 @@ public class Agenda extends javax.swing.JFrame {
     private javax.swing.JPanel estados;
     private javax.swing.JLabel estadoslabel;
     private com.toedter.calendar.JDateChooser fechachooser;
-    private javax.swing.JLabel fechalabel;
-    private javax.swing.JLabel flechader;
-    private javax.swing.JLabel flechaizq;
     private javax.swing.JPanel header;
     private javax.swing.JLabel headericono;
     private javax.swing.JLabel headerlabel;
